@@ -1,0 +1,14 @@
+<div>
+    <button (click)="onPress1()">Manager</button>
+</div>
+
+<div>
+    <button (click)="onPress2()">Staffs</button>
+</div>
+
+<div *ngIf="display">
+    <button><nxworkspace-list-mgr>Manager</nxworkspace-list-mgr></button>
+</div>
+<div *ngIf="display1">
+    <button><nxworkspace-list-staff>Staffs</nxworkspace-list-staff></button>
+</div>

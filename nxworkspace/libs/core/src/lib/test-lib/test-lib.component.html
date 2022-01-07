@@ -1,0 +1,17 @@
+<h1>List of {{ _taskName }}</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th *ngFor="let data of header">{{ data }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of products">
+      <!-- {{ data }} -->
+      <td *ngFor="let cell of data | keyvalue: originalOrder">
+        {{ cell.value }}
+      </td>
+  </tr>
+  </tbody>
+</table>

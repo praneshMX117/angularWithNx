@@ -1,0 +1,14 @@
+<div>
+    <button (click)="onPress1()">Products</button>
+</div>
+
+<div>
+    <button (click)="onPress2()">Inventory</button>
+</div>
+
+<div *ngIf="display">
+    <button><nxworkspace-product>Products</nxworkspace-product></button>
+</div>
+<div *ngIf="display1">
+    <button><nxworkspace-inventory>Inventory</nxworkspace-inventory></button>
+</div>
